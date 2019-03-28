@@ -3,7 +3,8 @@
 		[
 			"@babel/preset-env",
 			{
-				"useBuiltIns": "usage"
+				"useBuiltIns": "usage",
+        "corejs": "3.0.0"
 			}
 		],
 		"@babel/preset-react"
@@ -11,6 +12,6 @@
 	"plugins": [
 		"@babel/plugin-proposal-class-properties",
 		"@babel/plugin-transform-spread",
-		"async-to-promises"
+		"@babel/plugin-transform-async-to-generator"
 	]
 }
